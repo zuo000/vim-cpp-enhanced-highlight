@@ -38,6 +38,7 @@ if !exists('g:cpp_no_function_highlight')
     syn match   cCustomParen    "(" contains=cParen contains=cCppParen
     syn match   cCustomFunc     "\w\+\s*(\@="
     hi def link cCustomFunc  Function
+    hi Function gui=NONE cterm=bold ctermfg=red
 endif
 
 " Class and namespace scope
